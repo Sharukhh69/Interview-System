@@ -4,6 +4,12 @@ import viteLogo from '/vite.svg'
 import './App.css'
 import { SignedIn, SignedOut, SignInButton, UserButton, SignOutButton } from '@clerk/clerk-react'
 
+/**
+ * Root React component that renders the app header and authentication controls.
+ *
+ * @returns {JSX.Element} The rendered JSX containing a heading and Clerk authentication UI:
+ * the modal SignIn button when signed out, and UserButton with SignOutButton when signed in.
+ */
 function App() {
 
   return (
